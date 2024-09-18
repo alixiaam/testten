@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 2 | Reloj </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código muestra un reloj digital en formato de 12 horas (AM/PM) en una página web. Primero obtiene la hora actual usando new Date(), luego ajusta las horas para que se muestren correctamente en formato de 12 horas (cambiando a "PM" si es después del mediodía). Si las horas, minutos o segundos son menores a 10, les agrega un "0" delante para que siempre tengan dos dígitos. Luego, actualiza el contenido de un elemento en la página con el ID "MyClockDisplay" para mostrar la hora actual y repite este proceso cada segundo con setTimeout().</p>
+     </div>
+        <pre><code>
+            function showTime(){
+                var date = new Date();
+                var h = date.getHours(); // 0 - 23
+                var m = date.getMinutes(); // 0 - 59
+                var s = date.getSeconds(); // 0 - 59
+                var session = "AM";
+                
+                if(h == 0){
+                    h = 12;
+                }
+                
+                if(h > 12){
+                    h = h - 12;
+                    session = "PM";
+                }
+                
+                h = (h < 10) ? "0" + h : h;
+                m = (m < 10) ? "0" + m : m;
+                s = (s < 10) ? "0" + s : s;
+                
+                var time = h + ":" + m + ":" + s + " " + session;
+                document.getElementById("MyClockDisplay").innerText = time;
+                document.getElementById("MyClockDisplay").textContent = time;
+                
+                setTimeout(showTime, 1000);
+                
+            }
+            
+            showTime();
+            
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/2/2.html"><img class="img" src="img/2.png" alt=""></a>
+</div>
+</body>
+</html>

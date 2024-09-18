@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 3 | Tip Calculadora </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código calcula la propina y el total de una cuenta. Primero, toma el porcentaje de propina y el monto de la cuenta que ingresó el usuario, los convierte en números, y luego calcula cuánto es la propina multiplicando el porcentaje por el total. Después, suma la propina al total para obtener el nuevo monto final. Finalmente, muestra tanto la cantidad de la propina como el total actualizado en un elemento de la página con el ID "result".</p>
+     </div>
+        <pre><code>
+            function calculateTip() {
+                // Get the input values and convert them to numbers
+                let tip = parseFloat(document.getElementById("Tip").value);
+                let total = parseFloat(document.getElementById("Bill").value);
+            
+                // Calculate the tip amount and the new total
+                let tipAmount = (tip / 100) * total;
+                let newTotal = tipAmount + total;
+            
+                // Display the result
+                document.getElementById("result").innerHTML = `Tip Amount: $${tipAmount.toFixed(2)}<br>Total Amount: $${newTotal.toFixed(2)}`;
+            }            
+            
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/3/3.html"><img class="img" src="img/3.png" alt=""></a>
+</div>
+</body>
+</html>

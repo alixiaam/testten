@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 5 | Factorial </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código calcula el factorial de un número ingresado por el usuario. Primero, se declara la variable `num` que almacena el valor que el usuario ingresa a través de un cuadro de diálogo (`prompt`) y se convierte a número con `parseFloat()`. Luego, se inicializan las variables `fac` (factorial) y `val` en 1. Utilizando un bucle `do-while`, el código multiplica el valor de `fac` por `val` en cada iteración y luego incrementa `val` en 1, hasta que `val` sea mayor que `num`. Finalmente, se imprime el resultado del factorial utilizando `document.write()`.</p>
+     </div>
+        <pre><code>
+            //declaro mis variables
+    var num = parseFloat(prompt("Ingrese un valor que deseas encontrar en factorial de"))
+    var fac = 1
+    var val = 1
+
+            //se utiliza do while para hacer algo si esta condicion es valida
+    do{
+        fac *= val;
+        val++;
+    }while(val<=num);
+
+        //Se imprima el resultado
+    document.write("El factorial de ",num," es igual a ",fac); 
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/5/5.html"><img class="img" src="img/5.png" alt=""></a>
+</div>
+</body>
+</html>

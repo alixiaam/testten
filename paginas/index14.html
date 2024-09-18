@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 14 | Suma de Numeros Naturales </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código solicita al usuario que ingrese un número y luego calcula la suma de todos los números naturales desde 1 hasta el número ingresado. Primero, se valida que el número ingresado sea mayor o igual a 1. Si es válido, se utiliza un bucle `for` que va sumando cada número natural al total acumulado en la variable `suma`. Al finalizar el bucle, se muestra el resultado de la suma de los números naturales hasta el número indicado por el usuario. Si el número ingresado no es válido, el código no realiza ninguna operación ni muestra ningún mensaje.</p>
+     </div>
+        <pre><code>
+            //ingrese hasta que numero desea sumar los numeros naturales
+            let num = parseFloat(prompt("Ingrese hasta qué número desea sumar los numeros naturales:"));
+            
+            // Verificar si el numero ingresado es mayor o igual a 1
+            if (num >= 1) {
+                let suma = 0;
+                for (let i = 1; i <= num; i++) {
+                    // Sumar cada número al total de la suma
+                    suma += i;
+                }  // Mostrar en pantalla la suma de los primeros 'num' numeros naturales
+                document.write("La suma de los primeros ", num, " numeros naturales es: ", suma);
+            }         
+            
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/14/14.html"><img class="img" src="img/14.png" alt=""></a>
+</div>
+</body>
+</html>
+   

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 6 | IMC Calculadora </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código calcula el índice de masa corporal (IMC) de una persona para determinar si está en un rango de peso saludable. Primero, solicita al usuario que ingrese su altura en metros y su peso en kilogramos, y luego usa la fórmula del IMC (peso dividido entre la altura al cuadrado). Dependiendo del resultado del IMC, usa una serie de condiciones `if` para verificar si la persona está en bajo peso (IMC < 18.5), tiene un peso normal (IMC entre 18.5 y 24.9), sobrepeso (IMC entre 25 y 29.9), o si es obesa (IMC >= 30). Dependiendo del caso, muestra un mensaje correspondiente en la pantalla. Si hay algún error en los datos, muestra "Error".</p>
+     </div>
+        <pre><code>
+            //Declaro dos variables uno para peso y otro para altura
+            var altura = parseFloat(prompt("Ingrese su estatura en metros"))
+            var peso = parseFloat(prompt("Ingrese su peso en kilogramos"))
+            //utilizo if pero en el resultado de la formula, y digo si el resultado es mayor o menor q x usted es xyz
+            if( peso/(altura*altura) < 18.5){
+                document.write("Usted esta bajo peso")
+            }else if( peso/(altura*altura) >= 18.5 && peso/(altura*altura) <= 24.9){
+                document.write("Usted esta a peso normal")
+            }else if( peso/(altura*altura) >= 25 && peso/(altura*altura) <= 29.9){
+                document.write("Usted esta sobre peso")
+            }else if( peso/(altura*altura) >= 30 ){
+                document.write("Usted esta obeso")
+            }else{
+                document.write("Error")
+            }
+
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/6/6.html"><img class="img" src="img/6.png" alt=""></a>
+</div>
+</body>
+</html>
+   

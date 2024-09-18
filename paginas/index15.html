@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 15 | Conversion de Celsius y Fahrenheit  </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código solicita al usuario que ingrese si está trabajando con grados Celsius o Fahrenheit y luego pide el valor numérico de la temperatura que desea convertir. Utiliza un `if-else` para verificar si el usuario ingresó "Fahrenheit" o "Celsius" (admite varias formas de entrada como 'f', 'F', etc.). Si el usuario elige Fahrenheit, convierte la temperatura a Celsius utilizando la fórmula `(num-32)*(5/9)`. Si elige Celsius, convierte la temperatura a Fahrenheit utilizando la fórmula `(num*(9/5) + 32)`. Si la entrada no coincide con ninguna de las opciones válidas, se muestra un mensaje de error pidiendo al usuario que ingrese correctamente.</p>
+     </div>
+        <pre><code>
+            //delcaro dos variables los dos son prompt pero uno es parseFloat porque es un numero
+
+var grado = prompt("Estas ingresando Celsius o Fahrenheit?")
+var num = parseFloat(prompt("Ingrese el monto de grado que deseas convertir"))
+//aqui utilizo if para decir si el variable es igual a uno de esto criterios, haga esta formula
+if(grado == 'f' || grado == 'F' || grado == 'fahrenheit' || grado == 'Fahrenheit'){
+    var celsius=(num-32)*(5/9)
+    document.write(num," grados Fahrenheit es igual a ",celsius," grado Celsius")
+}else if(grado == 'c' || grado == 'C' || grado == 'celsius' || grado == 'Celsius'){
+    var fahrenheit=num*(9/5) + 32
+    document.write(num," grados celsius es igual a ",fahrenheit," grado fahrenheit")
+}else{
+    document.write("Error, porfavor escriba correctamente que se le pida")
+}
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/15/15.html"><img class="img" src="img/15.png" alt=""></a>
+</div>
+</body>
+</html>
+   

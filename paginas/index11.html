@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 11 | Numero mas Alto </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código pide al usuario que ingrese tres números y determina cuál es el mayor. Compara los números ingresados usando una serie de condiciones `if-else`. Primero, verifica si el primer número es el mayor; si no lo es, compara el segundo número con los otros dos. Si tampoco es el mayor, concluye que el tercer número es el mayor. Finalmente, muestra el número mayor al usuario.</p>
+     </div>
+        <pre><code>
+            //Declarando 3 numeros que el usuario ingrese
+let n1 = parseFloat(prompt("A continuacion se le pedira ingresar 3 numeros y se imprimira el numero mas alto. Ingrese su primero numero"));
+let n2 = prompt("Ingrese su segundo numero");
+let n3 = parseFloat(prompt("Ingrese su tercer numero"));
+
+//escribiendo primer criterio
+if(n1>n2 && n1>n3){
+    document.write("El primer numero ingresado ",n1," es el numero mayor")
+    //declarando el segundo si no es el primero
+}else if (n2>n1 && n2>n3){
+    document.write("El segundo numero ingresado ",n2," es el numero mayor")
+    //declarando el tercero si no combina con los demas
+}else if(n3>n1 && n3>n2){
+    document.write("El tercer numero ingresado ",n3," es el numero mayor")
+}            
+            
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/11/11.html"><img class="img" src="img/11.png" alt=""></a>
+</div>
+</body>
+</html>

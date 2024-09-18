@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 9 | Descuento en Compra </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código solicita al usuario que ingrese el monto total de una compra y, utilizando una estructura switch, calcula el descuento aplicable según el valor ingresado. El monto total, almacenado en la variable Toral, es comparado con los rangos de precios definidos en cada caso del switch. Si el monto se encuentra dentro de uno de estos rangos, se calcula el descuento correspondiente: un 7% para montos entre 1000 y 1999, un 17% para montos entre 2000 y 2499, y un 20% para montos superiores a 2500. Si el monto no se ajusta a ningún rango definido, el descuento se establece en 0. Finalmente, el código muestra el monto del descuento aplicable o indica que no se aplicó descuento, según el caso encontrado.</p>
+     </div>
+        <pre><code>
+            //Declaro mis variables
+var Toral = parseFloat(prompt("Ingrese el monto total de la compra:"));
+var descuento = 0;
+
+// Determinar el descuento
+switch (true) {
+    case (Toral >= 1000 && Toral < 2000):
+        descuento = 0.07 * Toral; 
+        break;
+    case (Toral >= 2000 && Toral < 2500):
+        descuento = 0.17 * Toral; 
+        break;
+    case (Toral >= 2500):
+        descuento = 0.20 * Toral; 
+        break;
+    default:
+        descuento = 0;
+        break;
+}
+
+// Mostrar el descuento aplicable
+if (descuento > 0) {
+    document.write("Usted tiene un descuento de L.",descuento.toFixed(2)," a la compra.");
+} else {
+    document.write("No se aplicó ningún descuento a la compra.");
+}
+      
+            
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/9/9.html"><img class="img" src="img/9.png" alt=""></a>
+</div>
+</body>
+</html>

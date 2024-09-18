@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proyectos en JS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>Proyectos</h1>
+   </header>
+   <nav>
+    <ul>
+       <li><a class="a" href="index.html">Home</a></li>
+       <li>
+           <a class="a" href="#4">Projects</a>
+           <ul class="dropdown">
+               <li><a href="index1.html">1</a></li>
+               <li><a href="index2.html">2</a></li>
+               <li><a href="index3.html">3</a></li>
+               <li><a href="index4.html">4</a></li>
+               <li><a href="index5.html">5</a></li>
+               <li><a href="index6.html">6</a></li>
+               <li><a href="index7.html">7</a></li>
+               <li><a href="index8.html">8</a></li>
+               <li><a href="index9.html">9</a></li>
+               <li><a href="index10.html">10</a></li>
+               <li><a href="index11.html">11</a></li>
+               <li><a href="index12.html">12</a></li>
+               <li><a href="index13.html">13</a></li>
+               <li><a href="index14.html">14</a></li>
+               <li><a href="index15.html">15</a></li>
+           </ul>
+      </li>
+   </ul>
+ </nav>
+<div class="text">
+    <div class="container">
+
+        <h3 class="title"> Proyecto 8 | Dias de la Semana </h3>
+     <div class="p">
+        <h3>Explicaion</h3>
+         <p>Este código solicita al usuario que ingrese un número del 1 al 7 y, usando una estructura `switch`, muestra el día de la semana correspondiente. El número ingresado es comparado con cada uno de los `case` dentro del `switch`. Si el número coincide con uno de los casos, se muestra el nombre del día correspondiente (1 para "Domingo", 2 para "Lunes", etc.). Cuando se encuentra el caso correcto, el programa usa `break` para salir del `switch` y no seguir evaluando más casos.</p>
+     </div>
+        <pre><code>
+            //declaro variables
+var dia = parseFloat(prompt("Ingrese un numero"));
+
+//utilizo switch para que si la respuesta es x pues va viendo los case a ver cual es igual
+switch(dia){
+    case 1:
+        document.write("Domingo");
+        break;
+    case 2:
+        document.write("Lunes");
+        break;
+    case 3:
+        document.write("Martes");
+        break;
+    case 4:
+        document.write("Miercoles");
+        break;
+    case 5:
+        document.write("Jueves");
+        break;
+    case 6:
+        document.write("Viernes");
+        break;
+    case 7:
+        document.write("Sabado");
+        break;
+}
+       
+            
+           </code></pre>
+     </div>
+     <h3>Dele clic a la imagen para ir a la pagina</h3>
+     <div>
+         <a href="projects/8/8.html"><img class="img" src="img/8.png" alt=""></a>
+</div>
+</body>
+</html>
